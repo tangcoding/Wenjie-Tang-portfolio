@@ -51,7 +51,7 @@
  
 <div id="projects">
     <h2 class="section_title">Projects</h2>
-    <div class="proj_list_wrap flipInX">
+    <div class="proj_list_wrap">
         <div class="proj_list" id="glcacs">
             <div class="proj_caption" id="glcacs_caption"><h3>GLCACS Web Site</h3></div><!--.proj_caption-->
         </div><!--.proj_list-->
@@ -71,29 +71,30 @@
             <div class="proj_caption" id="snb_caption"><h3>Search Neighboring Parks</h3></div><!--.proj_caption-->
         </div><!--.proj_list-->
     </div>
-
 </div><!--#projects-->  
 
 <!-- Modal -->
-<div class="modal flipInX" id="glcacsModal">
-    <div class="proj_div proj_div_left" id="glcacs_proj">
-        <div class="text_wrap">
-            <h2 class="proj_title">Chinese American Chemical Society Web Site</h2>
-            <h3 class="label label-info">AngularJS</h3>
-            <h3 class="label label-info">Bootstrap</h3>
-            <h3 class="label label-info">Python Webapp2</h3>
+<div class="modal proj_div proj_div_left" id="glcacsModal">
+    <div class="text_wrap">
+        <h2 class="proj_title">Chinese American Chemical Society Web Site</h2>
+        <h3 class="label label-info">AngularJS</h3>
+        <h3 class="label label-info">Bootstrap</h3>
+        <h3 class="label label-info">Python Webapp2</h3>
 
-            <ul class="details"> 
-                <li>Responsive design</li>
-                <li>Allow users registration and checking their information</li>
-                <li>Admin interface to update pictures, events and manage the registration information</li>
-            </ul>
-            <a href="http://glcacs-1048.appspot.com/"><button>Lauch site</button></a>
-            <a href="https://github.com/tangcoding/glcacs_site"><button>Github code</button></a>
-        </div><!-- .text_wrap -->   
+        <ul class="details"> 
+            <li>Responsive design</li>
+            <li>Allow users registration and checking their information</li>
+            <li>Admin interface to update pictures, events and manage the registration information</li>
+        </ul>
+        <div class="btn_wrap">
+            <a href="https://github.com/tangcoding/glcacs_site"><button  class="proj_div_btn">Github code</button></a>
+            <a href="http://glcacs-1048.appspot.com/"><button class="proj_div_btn">Lauch site</button></a>
+        </div><!--.btn_wrap-->
+    </div><!-- .text_wrap -->   
 
+    <a href="http://glcacs-1048.appspot.com/">
         <div id="glcacsCarousel" class="carousel slide img_wrap" data-ride="carousel">
-        <!-- Wrapper for slides -->
+            <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <div class="item active">
                 <img src="./images/glcacs_1_sm.png" alt="glcacs-page-image">
@@ -115,56 +116,60 @@
               <li data-target="#glcacsCarousel" data-slide-to="2"></li>
             </ol>
         </div><!--.carousel-->
-    </div>  <!-- .proj_div -->   
-    <button class="close">Close</button>
+    </a>
+    <button class="close">Close</button>  
 </div><!--.modal-->
 
 <!-- Modal -->
-<div class="modal flipInX" id="fpsModal">
-    <div class="proj_div" id="fps_proj">
-        <div class="text_wrap">
-            <h2 class="proj_title">3D First Person Shooter Game</h2>
-            <h3 class="label label-info">ThreeJS</h3>
-            <h3 class="label label-info">Jquery</h3>
-            <h3 class="label label-info">D3JS</h3>
-            <h3 class="label label-info">Python Webapp2</h3>
+<div class="modal proj_div" id="fpsModal">
+    <div class="text_wrap">
+        <h2 class="proj_title">3D First Person Shooter Game</h2>
+        <h3 class="label label-info">ThreeJS</h3>
+        <h3 class="label label-info">Jquery</h3>
+        <h3 class="label label-info">D3JS</h3>
+        <h3 class="label label-info">Python Webapp2</h3>
 
-            <ul class="details"> 
-                <li>A 3D realtime multiplayer game</li>
-                <li>Three game modes</li>
-                <li>Works on laptop and Mobile</li>
-                <li>Top scores saved in server database</li>
-            </ul>
-            <a href="http://firstpersonshooter-1138.appspot.com/"><button>Lauch site</button></a>
-            <a href="https://github.com/tangcoding/channel_fps"><button>Github code</button></a>
-        </div><!-- .text_wrap -->  
+        <ul class="details"> 
+            <li>A 3D realtime multiplayer game</li>
+            <li>Three game modes</li>
+            <li>Works on laptop and Mobile</li>
+            <li>Top scores saved in server database</li>
+        </ul>
+        <div class="btn_wrap">
+            <a href="https://github.com/tangcoding/channel_fps"><button class="proj_div_btn">Github code</button></a>
+            <a href="http://firstpersonshooter-1138.appspot.com/"><button class="proj_div_btn">Lauch site</button></a>
+        </div><!--.btn_wrap-->
+    </div><!-- .text_wrap -->  
 
+    <a href="http://firstpersonshooter-1138.appspot.com/">
         <div class="img_wrap">
             <img src="images/fps_1_sm.png" atl="fps-page-image">
         </div><!-- .img_wrap --> 
-    </div>  <!-- .proj_div -->   
-    <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+    </a>
+    <button class="close">Close</button>
 </div><!--.modal-->
 
-<div class="modal flipInX" id="fssModal">
-    <div class="proj_div proj_div_left" id="fss_proj">
-        <div class="text_wrap">
-            <h2 class="proj_title">Flappy Space Ship Game</h2>
-            <h3 class="label label-info">Javascript</h3>
-            <h3 class="label label-info">HTML5 Canvas</h3>
-            <h3 class="label label-info">Python Webapp2</h3>
+<div class="modal proj_div proj_div_left" id="fssModal">
+    <div class="text_wrap">
+        <h2 class="proj_title">Flappy Space Ship Game</h2>
+        <h3 class="label label-info">Javascript</h3>
+        <h3 class="label label-info">HTML5 Canvas</h3>
+        <h3 class="label label-info">Python Webapp2</h3>
 
-            <ul class="details"> 
-                <li>A flappy-type game on HTML5 canvas</li>
-                <li>Entity-component-system (ECS) architecture </li>
-                <li>Progress saved in local storage or server database</li>
-            </ul>
-            <a href="http://flappyspaceship-1201.appspot.com/"><button>Lauch site</button></a>
-            <a href="https://github.com/tangcoding/flappy_space_ship"><button>Github code</button></a>
-        </div><!-- .text_wrap --> 
+        <ul class="details"> 
+            <li>A flappy-type game on HTML5 canvas</li>
+            <li>Entity-component-system (ECS) architecture </li>
+            <li>Progress saved in local storage or server database</li>
+        </ul>
+        <div class="btn_wrap">
+            <a href="https://github.com/tangcoding/flappy_space_ship"><button class="proj_div_btn">Github code</button></a>
+            <a href="http://flappyspaceship-1201.appspot.com/"><button class="proj_div_btn">Lauch site</button></a>
+        </div><!--.btn_wrap-->
+    </div><!-- .text_wrap --> 
 
+    <a href="http://flappyspaceship-1201.appspot.com/">
         <div id="fssCarousel" class="carousel slide img_wrap" data-ride="carousel">
-        <!-- Wrapper for slides -->
+            <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <div class="item active">
                 <img src="./images/fss_1_sm.png" alt="fss-page-image">
@@ -182,53 +187,57 @@
               <li data-target="#fssCarousel" data-slide-to="1"></li>
             </ol>
         </div><!--.carousel-->  
-    </div>  <!-- .proj_div -->   
-    <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+    </a>
+    <button class="close">Close</button>
 </div><!--.modal-->
 
-<div class="modal flipInX" id="btcModal">
-    <div class="proj_div" id="btc_proj">
-        <div class="text_wrap">
-            <h2 class="proj_title">Bitcoin Price App</h2>
-            <h3 class="label label-info">Jquery</h3>
-            <h3 class="label label-info">D3JS</h3>
-            <h3 class="label label-info">Python Webapp2</h3>
+<div class="modal proj_div" id="btcModal">
+    <div class="text_wrap">
+        <h2 class="proj_title">Bitcoin Price App</h2>
+        <h3 class="label label-info">Jquery</h3>
+        <h3 class="label label-info">D3JS</h3>
+        <h3 class="label label-info">Python Webapp2</h3>
 
-            <ul class="details"> 
-                <li>A web app to check Bitcoin price</li>
-                <li>Realtim price got from Websocket API</li>
-                <li>Hourly cron job automatically adds data for the last hour</li>
-                <li>Daily cron job automatically adds data for the last day</li>
-            </ul>
-            <a href="http://cointrader-1072.appspot.com/"><button>Lauch site</button></a>
-            <a href="https://github.com/tangcoding/cointrader"><button>Github code</button></a>
-        </div><!-- .text_wrap -->  
+        <ul class="details"> 
+            <li>A web app to check Bitcoin price</li>
+            <li>Realtim price got from Websocket API</li>
+            <li>Hourly cron job automatically adds data for the last hour</li>
+            <li>Daily cron job automatically adds data for the last day</li>
+        </ul>
+         <div class="btn_wrap">
+            <a href="https://github.com/tangcoding/cointrader"><button class="proj_div_btn">Github code</button></a>
+            <a href="http://cointrader-1072.appspot.com/"><button class="proj_div_btn">Lauch site</button></a>
+        </div><!--.btn_wrap-->
+    </div><!-- .text_wrap -->  
 
+    <a href="http://cointrader-1072.appspot.com/">
         <div class="img_wrap">
             <img src="images/btc_1_sm.png" atl="btc-page-image">
         </div><!-- .img_wrap --> 
-    </div>  <!-- .proj_div -->   
+    </a>
     <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
 </div><!--.modal-->
 
-<div class="modal flipInX" id="acaModal">
-    <div class="proj_div proj_div_left" id="aca_proj">
-        <div class="text_wrap">
-            <h2 class="proj_title">Calendar App</h2>
-            <h3 class="label label-info">AngularJS</h3>
-            <h3 class="label label-info">Jquery</h3>
+<div class="modal proj_div proj_div_left" id="acaModal">
+    <div class="text_wrap">
+        <h2 class="proj_title">Calendar App</h2>
+        <h3 class="label label-info">AngularJS</h3>
+        <h3 class="label label-info">Jquery</h3>
 
-            <ul class="details"> 
-                <li>A calendar App built by AnuglarJS</li>
-                <li>Frontend Routing </li>
-                <li>Date stored in Firebase </li>
-            </ul>
-            <a href="http://thermal-proton-120503.appspot.com/#/"><button>Lauch site</button></a>
-            <a href="https://github.com/tangcoding/angular_calendar_app"><button>Github code</button></a>
-        </div><!-- .text_wrap --> 
+        <ul class="details"> 
+            <li>A calendar App built by AnuglarJS</li>
+            <li>Frontend Routing </li>
+            <li>Date stored in Firebase </li>
+        </ul>
+        <div class="btn_wrap">
+            <a href="https://github.com/tangcoding/angular_calendar_app"><button class="proj_div_btn">Github code</button></a>
+            <a href="http://thermal-proton-120503.appspot.com/#/"><button class="proj_div_btn">Lauch site</button></a>
+        </div><!--.btn_wrap-->
+    </div><!-- .text_wrap --> 
 
+    <a href="http://thermal-proton-120503.appspot.com/#/">
         <div id="acaCarousel" class="carousel slide img_wrap" data-ride="carousel">
-        <!-- Wrapper for slides -->
+            <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <div class="item active">
                 <img src="./images/aca_1_sm.png" alt="fss-page-image">
@@ -246,31 +255,33 @@
               <li data-target="#acaCarousel" data-slide-to="1"></li>
             </ol>
         </div><!--.carousel-->  
-    </div>  <!-- .proj_div -->   
-    <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+    </a>
+    <button class="close">Close</button>
 </div><!--.modal-->
 
-<div class="modal flipInX" id="snbModal">
-    <div class="proj_div blue_bg" id="snb_proj">
-        <div class="text_wrap">
-            <h2 class="proj_title">Search Neighboring Parks App</h2>
-            <h3 class="label label-info">Jquery</h3>
-            <h3 class="label label-info">Google API</h3>
-            <h3 class="label label-info">Weather API</h3>
+<div class="modal proj_div" id="snbModal">
+    <div class="text_wrap">
+        <h2 class="proj_title">Search Neighboring Parks App</h2>
+        <h3 class="label label-info">Jquery</h3>
+        <h3 class="label label-info">Google API</h3>
+        <h3 class="label label-info">Weather API</h3>
 
-            <ul class="details"> 
-                <li>A web app to search neighboring parks of typed location</li>
-                <li>Show the picture and review of the park</li>
-                <li>Show the weather of typed location</li>
-            </ul>
-            <a href="http://searchparks.appspot.com/"><button>Lauch site</button></a>
-            <a href="https://github.com/tangcoding/Search_Nearby_App"><button>Github code</button></a>
-        </div><!-- .text_wrap -->   
+        <ul class="details"> 
+            <li>A web app to search neighboring parks of typed location</li>
+            <li>Show the picture and review of the park</li>
+            <li>Show the weather of typed location</li>
+        </ul>
+        <div class="btn_wrap">
+            <a href="https://github.com/tangcoding/Search_Nearby_App"><button class="proj_div_btn">Github code</button></a>
+            <a href="http://searchparks.appspot.com/"><button class="proj_div_btn">Lauch site</button></a>
+        </div><!--.btn_wrap-->
+    </div><!-- .text_wrap -->   
 
+    <a href="http://searchparks.appspot.com/">
         <div class="img_wrap">
             <img src="images/snb_1_sm.png" atl="snb-page-image">
         </div><!-- .img_wrap -->   
-    </div>  <!-- .proj_div --> 
+    </a>
     <button class="close">Close</button>
 </div><!--.modal-->
 
@@ -289,10 +300,9 @@ $(document).ready(function(){
     $(".proj_list").click(function(){
         var modal = '#' + this.id + 'Modal';
         $('.modal-backdrop').show();
-        var top = $(window).scrollTop();
-        $(modal).css("top", top+ 'px');
+        var top = $(window).scrollTop() + 35;
+        $(modal).css("top", top + 'px');
         $(modal).show();
-        $(modal).addClass('flipInX');
     });
     $(".close").click(function(){
         $('.modal-backdrop').hide();

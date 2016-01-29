@@ -18,7 +18,7 @@ p{
 h2{ font-size: 1.4rem; color: #00ACC1; text-shadow: 2px 1px 2px #80DEEA;}
 h3{font-size: 1.2rem;}
 
-a:hover{cursor: pointer;}
+a:hover{cursor: pointer; text-decoration: none;}
 
 .header {
   text-align: center;
@@ -88,24 +88,24 @@ a:hover{cursor: pointer;}
   margin: 0 auto;
 }
 
-
-.section_title{text-align: left;}
+.section_title{text-align: left; font-size: 1.8rem;   text-shadow: 0.03em 0.03em 1px #0097A7;}
 
 #skill{
   margin-top: 15px;
   text-align: left;
   color: #0097A7;
   border-bottom: 1px solid #0097A7;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
 }
 
 .bg_text{
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: #00BCD4;
 }
 
-.proj_list_wrap{width: 100%; margin: 1.5rem auto; text-align: center;}
+.proj_list_wrap{width: 100%; margin: 1.5rem auto; text-align: center; animation: flipInX 1s;  -webkit-animation: flipInX 1s;}
 .proj_list{color: #555; width: 250px; height: 250px; background-size: cover; background-repeat: no-repeat; margin: 10px 10px; box-shadow: 1px 1px 3px  2px #B2EBF2; border: none; display: inline-block;}
+.proj_list:hover{ cursor: pointer;}
 .proj_caption{position: relative; background:rgba(0,0,0, 0.5); width: 100%; height: 100%; display: none; z-index: 100;}
 .proj_caption h3{color: #fff; position: absolute; bottom: 10px; left:10px; margin: auto auto;}
 
@@ -118,17 +118,16 @@ a:hover{cursor: pointer;}
 
 .label, .label-info { color: #fff; margin-bottom: 20px;}
 
-.modal{margin: 0; padding: 0; width: 100%; height: 100%; display: none; position: absolute; top: 0; left: 0; bottom: 0; right: 0;  z-index: 200; }
+.modal{display: none; width:100%;position: absolute; top:0; right: 0; z-index: 200; animation: flipInX 1s;  -webkit-animation: flipInX 1s; }
 .modal-backdrop{position: fixed; top: 0; left: 0; bottom: 0; right: 0;  z-index: 100;  background:rgba(255,255,255, 0.9); display: none;}
-.close{ position: fixed; top: 15px; left: 20px; background: #fff; border: 2px solid #0097A7; border-radius: 10px; color: #0097A7;}
 
 .proj_div{
   width: 100%;
-  margin: 2rem auto;
   padding: 25px;
   background: linear-gradient(270deg,#B2EBF2 0,#f8f8f8  68%);
   background-repeat: no-repeat;
   background-position: right center;
+  text-align: center;
 }
 
 .proj_div_left{
@@ -141,27 +140,29 @@ a:hover{cursor: pointer;}
   text-shadow:#aaa 0 1px 3px;
 }
 
-.proj_div button{
+.btn_wrap{text-align: center;}
+.proj_div_btn{
   color: #fff;
   background: #FFC107;
   border: 3px solid #fff; 
   border-radius: 20px;
   padding: 6px 10px;
-  margin: 15px auto;
+  margin: 15px 8px;
   display: inline-block;
   outline: none;
   font-size: 1rem;
+  float: right;
 }
-.proj_div button:hover{background: #FFD54F; }
+.proj_div_btn:hover{background: #FFD54F; cursor: pointer; }
+.close{ position: absolute; top: 10px; right: 10px; background: #0097A7; border: 2px solid #fff; border-radius: 10px; color: #fff;}
 
 .img_wrap, .text_wrap{
-  width: 48%;
   height: 100%;
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: top;
 }
-.text_wrap{text-align: left;}
-.img_wrap {  text-align: center; }
+.text_wrap{max-width: 45%; text-align: left; padding: 10px;}
+.img_wrap {width: 45%; text-align: center; }
 
 .img_wrap img, .carousel-inner{
   width: 100%;
@@ -180,6 +181,7 @@ a:hover{cursor: pointer;}
   color: #555;
   font-size: 1rem;
   text-align: left;
+  padding-left: 10px;
 }
 
 /* Animation */
@@ -203,19 +205,13 @@ a:hover{cursor: pointer;}
            opacity: 1; 
     } 
 } 
-.flipInX { 
-    -webkit-backface-visibility: visible ; /*important*/
-    -webkit-animation-name: flipInX; 
-    backface-visibility: visible; /*important*/
-    animation-name: flipInX; 
-}
 
 /*reponsive design-- small*/
 
 @media only screen and (max-width: 350px)  {
   html{font-size: 11px;}
   .proj_list{width: 120px; height: 120px;}
-  .text_wrap, .img_wrap{ width: 100%; display: block; }
+  .text_wrap, .img_wrap{ width: 100%; max-width: 100%; display: block; }
   .img_wrap img, .carousel-inner{ max-height: 250px; max-width: 250px;}
 }
 
@@ -224,7 +220,7 @@ a:hover{cursor: pointer;}
 @media only screen and (min-width: 351px)  and (max-width: 786px) {
   html{font-size: 14px;}
   .proj_list{width: 210px; height: 210px;}
-  .text_wrap, .img_wrap{ width: 100%; display: block; text-align: center;}
+  .text_wrap, .img_wrap{ width: 100%; max-width: 100%; display: block; text-align: center;}
   .img_wrap img, .carousel-inner{ max-height: 250px; max-width: 250px;}
   .details{width: 80%;}
 }

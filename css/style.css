@@ -121,22 +121,15 @@ a:hover{cursor: pointer; text-decoration: none;}
 
 .label, .label-info { color: #fff; margin-bottom: 20px;}
 
-.modal{display: none; width:100%;position: absolute; top:0; right: 0; z-index: 200; animation: flipInX 1s;  -webkit-animation: flipInX 1s; }
+.modal{display: none; width:100%; position: absolute; top:0; right: 0; z-index: 200;}
 .modal-backdrop{position: fixed; top: 0; left: 0; bottom: 0; right: 0;  z-index: 100;  background:rgba(255,255,255, 0.9); display: none;}
 
 .proj_div{
   width: 100%;
   padding: 25px;
-  background: linear-gradient(270deg,#B2EBF2 0,#f8f8f8  68%);
+  background: linear-gradient(270deg,#B2EBF2 0,#f8f8f8  75%);
   background-repeat: no-repeat;
-  background-position: right center;
   text-align: center;
-}
-
-.proj_div_left{
-  background: linear-gradient(90deg,#B2EBF2 0,#f8f8f8  68%); 
-  background-repeat: no-repeat;
-  background-position: left center;
 }
 
 .proj_div h2{

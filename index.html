@@ -111,7 +111,7 @@
 </div><!--#projects-->  
 
 <!-- Modal -->
-<div class="modal proj_div proj_div_left" id="glcacsModal">
+<div class="modal proj_div" id="glcacsModal">
     <div class="text_wrap">
         <h2 class="proj_title">Chinese American Chemical Society Web Site</h2>
         <h3>
@@ -189,7 +189,7 @@
     <button class="close">Close</button>
 </div><!--.modal-->
 
-<div class="modal proj_div proj_div_left" id="fssModal">
+<div class="modal proj_div" id="fssModal">
     <div class="text_wrap">
         <h2 class="proj_title">Flappy Space Ship Game</h2>
         <h3>
@@ -263,7 +263,7 @@
     <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
 </div><!--.modal-->
 
-<div class="modal proj_div proj_div_left" id="acaModal">
+<div class="modal proj_div" id="acaModal">
     <div class="text_wrap">
         <h2 class="proj_title">Calendar App</h2>
         <h3>
@@ -342,20 +342,23 @@ $(document).ready(function(){
         var element = '#' + this.id + '_skill';
         $(element).show();
     });
+
     $(".proj_list").mouseleave(function(){
         var element = '#' + this.id + '_skill';
         $(element).hide();
     });
+
     $(".proj_list").click(function(){
         var modal = '#' + this.id + 'Modal';
         $('.modal-backdrop').show();
         var top = $(window).scrollTop() + 35;
-        $(modal).css("top", top + 'px');
-        $(modal).show();
+        $(modal).css("top", '100%');
+        $(modal).animate({ opacity: 'show', top: top + 'px' }, 300);
     });
+
     $(".close").click(function(){
         $('.modal-backdrop').hide();
-        $('.modal').hide();
+        $(this).parent().animate({ opacity: 'hide', top: '100%' }, 300);
     });
 
 });

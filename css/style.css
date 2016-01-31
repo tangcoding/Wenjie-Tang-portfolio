@@ -17,7 +17,7 @@ p{
 
 h2{ font-size: 1.4rem; color: #00ACC1; text-shadow: 2px 1px 2px #80DEEA;}
 h3{font-size: 1.2rem;}
-
+a,a:active, a:focus, button, button:focus, button:active{ outline: none;}
 a:hover{cursor: pointer; text-decoration: none;}
 
 .header {
@@ -70,7 +70,6 @@ a:hover{cursor: pointer; text-decoration: none;}
     margin-right: 10px;
     margin-left: 10px;
     vertical-align: top;
-    outline: none;
 }
 
 .icon img {

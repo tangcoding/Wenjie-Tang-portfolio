@@ -85,7 +85,7 @@
             <div class="proj_skill" id="btc_skill">
                 <h2> <span class="label label-info">D3JS</span></h2>
                 <h2> <span class="label label-info">Jquery</span></h2>
-                <h2> <span class="label label-info">Websocket</span></h2>
+                <h2> <span class="label label-info">Websocket API</span></h2>
                 <h2> <span class="label label-info">Python Webapp2</span></h2>
             </div><!--.proj_skill-->
         </div><!--.proj_list-->
@@ -239,7 +239,7 @@
         <h3>
             <span class="label label-info">Jquery</span>
             <span class="label label-info">D3JS</span>
-            <span class="label label-info">Websocket</span>
+            <span class="label label-info">Websocket API</span>
         </h3>
         <h3><span class="label label-info">Python Webapp2</span></h3>
 
@@ -337,7 +337,18 @@
 <div class="modal-backdrop"></div>
 
 <script type="text/javascript">
+
 $(document).ready(function(){
+
+    var w = window.innerWidth; // responsive img
+    if ((w) > 786){
+        $('.img_wrap img').each(function(){
+            var thisImg = $(this);
+            var newSrc = thisImg.attr('src').replace('sm', 'bg');
+            thisImg.attr('src', newSrc);
+        });
+    } 
+
     $(".proj_list").mouseover(function(){
         var element = '#' + this.id + '_skill';
         $(element).show();

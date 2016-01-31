@@ -41,12 +41,12 @@ a:hover{cursor: pointer; text-decoration: none;}
 
 @-webkit-keyframes translate {
     0%   {background-size: 350px 350px, 250px 200px, 100px 150px, 150px 150px, 250px 150px; }
-    100% {background-size: 550px 550px, 350px 300px, 300px 350px, 300px 300px, 300px 200px; }
+    100% {background-size: 550px 550px, 450px 300px, 300px 350px, 350px 350px, 300px 200px; }
 }
 
 @keyframes translate {
     0%   {background-size: 350px 350px, 250px 200px, 100px 150px, 150px 150px, 250px 150px; }
-    100% {background-size: 550px 550px, 350px 300px, 300px 350px, 300px 300px, 300px 200px; }
+    100% {background-size: 550px 550px, 450px 300px, 300px 350px, 350px 350px, 300px 200px; }
 }
 
 .header  h1{
@@ -70,6 +70,7 @@ a:hover{cursor: pointer; text-decoration: none;}
     margin-right: 10px;
     margin-left: 10px;
     vertical-align: top;
+    outline: none;
 }
 
 .icon img {
@@ -106,8 +107,8 @@ a:hover{cursor: pointer; text-decoration: none;}
 .proj_list_wrap{width: 100%; margin: 1.5rem auto; text-align: center; animation: flipInX 1s;  -webkit-animation: flipInX 1s;}
 .proj_list{color: #555; width: 250px; height: 250px; background-size: cover; background-repeat: no-repeat; margin: 10px 10px; box-shadow: 1px 1px 3px  2px #B2EBF2; border: none; display: inline-block; position: relative; text-align: center;}
 .proj_list:hover{ cursor: pointer;}
-.proj_caption{position: absolute; bottom: 10px; left: 2px; background:rgba(255, 255, 255,0.6); display: block; z-index: 100; border-radius: 5px; padding: 3px; text-align: left; border: 2px solid #0097A7; box-shadow: 1px 1px #0097A7;}
-.proj_caption h3{color: #0097A7; margin: auto auto; text-shadow: 3px 1px 20px rgba(255, 255, 255, 1);}
+.proj_caption{position: absolute; bottom: 10px; left: 2px; background:#0097A7; display: block; z-index: 100; border-radius: 16px; padding: 3px 10px; text-align: center; }
+.proj_caption h3{color: #fff; margin: auto auto; text-shadow:#C17C3A 0 -1px 0;}
 .proj_skill{position: absolute; bottom: 0; left: 0; top: 0; right: 0; background:rgba(150, 150, 150,0.8); text-align: center; display: none;}
 
 .label{margin: 5px 1px;}

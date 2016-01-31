@@ -364,12 +364,12 @@ $(document).ready(function(){
         $('.modal-backdrop').show();
         var top = $(window).scrollTop() + 35;
         $(modal).css("top", '100%');
-        $(modal).animate({ opacity: 'show', top: top + 'px' }, 300);
+        $(modal).animate({ opacity: 'show', top: top + 'px' }, 300, 'swing');
     });
 
     $(".close").click(function(){
         $('.modal-backdrop').hide();
-        $(this).parent().animate({ opacity: 'hide', top: '100%' }, 300);
+        $(this).parent().animate({ opacity: 'hide', top: '100%' }, 300, 'swing');
     });
 
 });

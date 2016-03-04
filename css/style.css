@@ -106,7 +106,7 @@ a:hover{cursor: pointer; text-decoration: none;}
 .proj_list_wrap{width: 100%; margin: 1.5rem auto; text-align: center; animation: flipInX 1s;  -webkit-animation: flipInX 1s;}
 .proj_list{color: #555; width: 250px; height: 250px; background-size: cover; background-repeat: no-repeat; margin: 10px 10px; box-shadow: 1px 1px 3px  2px #B2EBF2; border: none; display: inline-block; position: relative; text-align: center;}
 .proj_list:hover{ cursor: pointer;}
-.proj_caption{position: absolute; bottom: 10px; left: 2px; background:#0097A7; display: block; z-index: 100; border-radius: 16px; padding: 3px 10px; text-align: center; }
+.proj_caption{position: absolute; bottom: 10px; left: 2px; background:#555; display: block; z-index: 100; padding: 3px 10px; text-align: center; }
 .proj_caption h3{color: #fff; margin: auto auto; text-shadow:#C17C3A 0 -1px 0;}
 .proj_skill{position: absolute; bottom: 0; left: 0; top: 0; right: 0; background:rgba(150, 150, 150,0.8); text-align: center; display: none;}
 
@@ -116,6 +116,7 @@ a:hover{cursor: pointer; text-decoration: none;}
 #fps{background-image: url("../images/fps_1_sm.png");}
 #fss{background-image: url("../images/fss_1_sm.png");}
 #btc{background-image: url("../images/btc_1_sm.png");}
+#cap{background-image: url("../images/cap_1_sm.png");}
 #aca{background-image: url("../images/aca_1_sm.png");}
 #snb{background-image: url("../images/snb_1_sm.png");}
 

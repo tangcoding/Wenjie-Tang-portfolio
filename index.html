@@ -36,9 +36,8 @@
 
 <header class="header"> 
     <h1>Wenjie Tang</h1> 
-    <h2> Web Developer</h2>
     <div id="contact">
-        <a class="icon" href="mailto:gxfc1616@gmail.com"> <img title="email" alt="email" src="./images/email-icon.png"></a>
+        <a class="icon" href="mailto:tangwenjie09@gmail.com"> <img title="email" alt="email" src="./images/email-icon.png"></a>
         <a class="icon" href="https://github.com/tangcoding"> <img title="github" alt="github" src="./images/github-icon.png"> </a> 
     </div><!--#contact--> 
 </header>
@@ -90,6 +89,14 @@
             </div><!--.proj_skill-->
         </div><!--.proj_list-->
 
+        <div class="proj_list" id="cap">
+            <div class="proj_caption" id="cap_caption"><h3>Captcha App</h3></div><!--.proj_caption-->
+            <div class="proj_skill" id="cap_skill">
+                <h2> <span class="label label-info">API</span></h2>
+                <h2> <span class="label label-info">Python Webapp2</span></h2>
+            </div><!--.proj_skill-->
+        </div><!--.proj_list-->
+
         <div class="proj_list" id="aca">
             <div class="proj_caption" id="aca_caption"><h3>Calendar App</h3></div><!--.proj_caption-->
             <div class="proj_skill" id="aca_skill">
@@ -126,7 +133,7 @@
             <li>Admin interface to update pictures, events and manage the registration information</li>
         </ul>
         <div class="btn_wrap">
-            <a href="http://glcacs-1048.appspot.com/"><button class="proj_div_btn">Lauch site</button></a>
+            <a href="http://www.greatlakecacs.org/"><button class="proj_div_btn">Lauch site</button></a>
             <a href="https://github.com/tangcoding/glcacs_site"><button  class="proj_div_btn">Github code</button></a>
         </div><!--.btn_wrap-->
     </div><!-- .text_wrap -->   
@@ -170,9 +177,9 @@
         <h3><span class="label label-info">Python Webapp2</span></h3>
 
         <ul class="details"> 
-            <li>A 3D realtime multiplayer game</li>
+            <li>A realtime multiplayer game</li>
             <li>Three game modes</li>
-            <li>Works on laptop and Mobile</li>
+            <li>Play on laptop and Mobile</li>
             <li>Top scores saved in server database</li>
         </ul>
         <div class="btn_wrap">
@@ -258,6 +265,30 @@
     <a href="http://cointrader-1072.appspot.com/">
         <div class="img_wrap">
             <img src="images/btc_1_sm.png" atl="btc-page-image">
+        </div><!-- .img_wrap --> 
+    </a>
+    <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
+</div><!--.modal-->
+
+<div class="modal proj_div" id="capModal">
+    <div class="text_wrap">
+        <h2 class="proj_title">Captcha API</h2>
+        <h3><span class="label label-info">API</span></h3>
+        <h3><span class="label label-info">Python Webapp2</span></h3>
+
+        <ul class="details"> 
+            <li>Provide captcha images and validation of the user input</li>
+            <li>Support JSONP request</li>
+        </ul>
+         <div class="btn_wrap">
+            <a href="http://captcha-1236.appspot.com/"><button class="proj_div_btn">Lauch site</button></a>
+            <a href="https://github.com/tangcoding/captcha_api"><button class="proj_div_btn">Github code</button></a>
+        </div><!--.btn_wrap-->
+    </div><!-- .text_wrap -->  
+
+    <a href="http://captcha-1236.appspot.com/">
+        <div class="img_wrap">
+            <img src="images/cap_1_sm.png" atl="btc-page-image">
         </div><!-- .img_wrap --> 
     </a>
     <button type="button" class="btn btn-default close" data-dismiss="modal">Close</button>
@@ -361,15 +392,18 @@ $(document).ready(function(){
 
     $(".proj_list").click(function(){
         var modal = '#' + this.id + 'Modal';
-        $('.modal-backdrop').show();
+        $('.modal-backdrop').show("slow");
         var top = $(window).scrollTop() + 35;
-        $(modal).css("top", '100%');
-        $(modal).animate({ opacity: 'show', top: top + 'px' }, 300, 'swing');
+        $(modal).css("top", top);
+        $(modal).show("slow");
+        // $(modal).css("top", '100%');
+        // $(modal).animate({ opacity: 'show', top: top + 'px' }, 300, 'swing');
     });
 
     $(".close").click(function(){
-        $('.modal-backdrop').hide();
-        $(this).parent().animate({ opacity: 'hide', top: '100%' }, 300, 'swing');
+        $('.modal-backdrop').hide("slow");
+        $(this).parent().hide("slow");
+        // $(this).parent().animate({ opacity: 'hide', top: '100%' }, 300, 'swing');
     });
 
 });
